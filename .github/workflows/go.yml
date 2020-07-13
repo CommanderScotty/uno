@@ -38,9 +38,8 @@ jobs:
     - name: Test
       working-directory: server
       run: go test -v .
-
-    - name: Gofmter
-      uses: Jerome1337/gofmt-action@v1.0.2
-      with:
-        # Path used by gofmt command
-        gofmt-path: # optional, default is ./
+        
+    - name: Golang Formatter
+      uses: sladyn98/auto-go-format@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
