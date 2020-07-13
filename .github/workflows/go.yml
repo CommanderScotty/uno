@@ -38,3 +38,9 @@ jobs:
     - name: Test
       working-directory: server
       run: go test -v .
+
+    - name: Gofmter
+      uses: Jerome1337/gofmt-action@v1.0.2
+      with:
+        # Path used by gofmt command
+        gofmt-path: # optional, default is ./
