@@ -38,6 +38,3 @@ jobs:
     - name: Test
       working-directory: server
       run: go test -v .
-
-    - name: Go Formatter
-      uses: sladyn98/auto-go-format@v0.0.1
