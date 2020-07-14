@@ -14,8 +14,6 @@ jobs:
     name: Golang Formatter
     runs-on: ubuntu-latest
     steps:
-    - uses: CommanderScotty/uno@master
-      with:
         fetch-depth: 0
     - name: Golang Formatter
       uses: sladyn98/auto-go-format@master
